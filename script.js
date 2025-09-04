@@ -1,6 +1,6 @@
 const form = document.querySelector(".todo-form");
 const inputText = document.querySelector(".todo-input");
-const templete = document.querySelector("template");
+const template = document.querySelector("todo-item-templatee");
 
 const list = document.querySelector(".todo-list");
 
@@ -26,7 +26,7 @@ function createTodoList(toDoText) {
 }
 
 function render(todo) {
-  const clone = templete.content.cloneNode(true);
+  const clone = template.content.cloneNode(true);
 
   const itemContainer = clone.querySelector(".todo-item");
   const checkBoxElement = clone.querySelector(".todo-checkbox");
@@ -53,7 +53,7 @@ function deleteTodo(parent, todoId) {
 }
 
 function editTodo(parent, todo) {
-  const templelteEdit = document.querySelector(".edit-todo-item-templete");
+  const templelteEdit = document.querySelector(".edit-todo-item-template");
   const templelteEditClone = templelteEdit.content.cloneNode(true);
 
   const editForm = templelteEditClone.querySelector(".edit-form");
