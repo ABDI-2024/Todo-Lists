@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <h1>My Todo List</h1>
+      </div>
+
+      <!-- Add Task Form Section -->
+      <div class="form-container">
+        <form class="todo-form">
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="Add a new task..."
+          />
+          <button type="submit" class="add-btn">Add</button>
+        </form>
+      </div>
+
+      <!-- Todo List Section -->
+      <div class="todo-list"></div>
+
+      <template class="todo-item-templete">
+        <div class="todo-item">
+          <input type="checkbox" class="todo-checkbox" />
+          <span class="todo-text"></span>
+          <div class="btn-group">
+            <button class="btn edit-btn">Edit</button>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+        </div>
+      </template>
+
+      <template class="edit-todo-item-templete">
+        <div class=".todo-item">
+          <form class="edit-form">
+            <input
+              type="text"
+              class="edit-input"
+              value="Finish project report"
+            />
+            <div class="btn-group">
+              <button type="submit" class="btn save-btn">Save</button>
+              <button type="reset" class="btn cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </template>
+    </div>
+  </body>
+</html>
