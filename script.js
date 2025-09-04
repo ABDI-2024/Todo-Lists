@@ -1,6 +1,6 @@
 const form = document.querySelector(".todo-form");
 const inputText = document.querySelector(".todo-input");
-const template = document.querySelector("todo-item-templatee");
+const template = document.querySelector(".todo-item-template");
 
 const list = document.querySelector(".todo-list");
 
@@ -54,6 +54,7 @@ function deleteTodo(parent, todoId) {
 
 function editTodo(parent, todo) {
   const templelteEdit = document.querySelector(".edit-todo-item-template");
+
   const templelteEditClone = templelteEdit.content.cloneNode(true);
 
   const editForm = templelteEditClone.querySelector(".edit-form");
